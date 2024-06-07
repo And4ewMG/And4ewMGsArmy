@@ -27,7 +27,9 @@ In the terminal, run the following commands:
 ### How to Use:
 Find the file called `config.json` and change the following:
 > `YOUR_BOT_TOKEN` to your actual bot token.
+> 
 > `YOUR_CLIENT_ID` to your bot's client ID.
+> 
 > `YOUR_GUILD_ID` to your bot's guild *(server)* ID.
 
 To find your Client and Guild ID:
