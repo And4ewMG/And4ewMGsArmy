@@ -1,1 +1,5 @@
-
+{
+  "TOKEN": "YOUR_BOT_TOKEN",
+  "CLIENTID": "YOUR_CLIENT_ID",
+  "GUILDID": "YOUR_GUILD_ID",
+}
