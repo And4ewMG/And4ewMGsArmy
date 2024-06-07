@@ -12,3 +12,6 @@ In the terminal, run `npm init`, and input the following:
 `keywords:` *(Your Choice)*
 `author:` *(Your Choice)*
 `license: UNLICENSED`
+
+**[!]** means you must pay attention and information is critical for the bot to run.
+
