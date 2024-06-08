@@ -1,7 +1,7 @@
 const fs = require('node:fs');
 const path = require('node:path');
 const { Client, Collection, Events, GatewayIntentBits } = require('discord.js');
-const { TOKEN } = require('./config.json');
+const { TOKEN, CLIENTID, GUILDID } = require('./config.json');
 
 require('./deploy-commands');
 
