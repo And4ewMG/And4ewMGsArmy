@@ -7,4 +7,5 @@ Permission is hereby granted to use the code for any purpose, including personal
 > If asked, users must state that the code is not originally theirs.
 >
 > The code, or any derivative works, may not be sold.
+
 *(thanks ChatGPT for generating that for me)*
