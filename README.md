@@ -83,9 +83,15 @@ To find your token:
 > Command registration
 > 
 > The `/ping` command.
+>
+> Added event handling
+>
+> Added Utils folder with `loadCommands.js`
 
 **UPDATED**
 > The license
+>
+> Split index.js into 4: `index.js`, `events/interactionCreate.js`, `events/ready.js`, `utils/loadCommands.js`
 
 ### 06/07/2024:
 **ADDED**:
