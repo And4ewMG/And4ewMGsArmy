@@ -1,13 +1,9 @@
+const { REST, Routes } = require('discord.js');
+const { TOKEN, CLIENTID, GUILDID } = require('./config.json');
 const fs = require('node:fs');
 const path = require('node:path');
-const { Client, Collection, Events, GatewayIntentBits } = require('discord.js');
-const { TOKEN, CLIENTID, GUILDID } = require('./config.json');
 
-require('./deploy-commands');
-
-const client = new Client({ intents: [GatewayIntentBits.Guilds] });
-client.commands = new Collection();
-
+const commands = [];
 const foldersPath = path.join(__dirname, 'commands');
 const commandItems = fs.readdirSync(foldersPath);
 
@@ -16,7 +12,7 @@ const loadCommands = (commandFiles, commandsPath = foldersPath) => {
         const filePath = path.join(commandsPath, file);
         const command = require(filePath);
         if (command.data && command.execute) {
-            client.commands.set(command.data.name, command);
+            commands.push(command.data.toJSON());
         } else {
             console.log(`[WARNING] The command at ${filePath} is missing a required "data" or "execute" property.`);
         }
@@ -35,25 +31,16 @@ if (commandItems.every((item) => fs.lstatSync(path.join(foldersPath, item)).isDi
     console.error('The commands directory should contain either only subdirectories or only files.');
 }
 
-client.on(Events.InteractionCreate, async (interaction) => {
-    if (!interaction.isChatInputCommand()) return;
-    const command = client.commands.get(interaction.commandName);
-    if (!command) {
-        console.error(`No command matching ${interaction.commandName} was found.`);
-        return;
-    }
+const rest = new REST().setToken(TOKEN);
+
+(async () => {
     try {
-        await command.execute(interaction);
+        console.log(`Started refreshing ${commands.length} application (/) commands.`);
+
+        const data = await rest.put(Routes.applicationGuildCommands(CLIENTID, GUILDID), { body: commands });
+
+        console.log(`Successfully reloaded ${data.length} application (/) commands.`);
     } catch (error) {
         console.error(error);
-        const responseMethod = interaction.replied || interaction.deferred ? 'followUp' : 'reply';
-        await interaction[responseMethod]({ content: 'There was an error while executing this command!', ephemeral: true });
     }
-    console.log(interaction);
-});
-
-client.once(Events.ClientReady, (readyClient) => {
-    console.log(`Ready! Logged in as ${readyClient.user.tag}`);
-});
-
-client.login(TOKEN);
+})();
