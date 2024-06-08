@@ -11,8 +11,8 @@ Permission is hereby granted to use the code for any purpose, including personal
 > Upon inquiry, users must acknowledge that the code is not their original creation.
 >
 > The code, including any derivative works, may not be sold.
-
-*(thanks ChatGPT for generating that for me)*
+> 
+Unauthorized copying, distribution, modification, or other use of this code without proper authorization may result in legal action. If you believe that your intellectual property rights have been infringed by this project, please follow the procedures outlined by the DMCA to file a notice of infringement.
 
 
 ## How to Create:
