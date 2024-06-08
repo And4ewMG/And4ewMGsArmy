@@ -72,3 +72,17 @@ To find your token:
 > A token looks something like 'MTI0NTQxMTQ1Nzg5MDM5MDE1OA.Ge3bXk.kZjwwBR5Wo4WZwjQzaF3dy3N' *(don't worry, I reset the token immediately after)*, also it's shortened because GitHub won't let me commit a file with a bot token.
 > 
 > If you think your token has been leaked, go back to 'https://discord.com/developers/applications/*YOUR_CLIENT_ID*/bot' and click 'Reset Token' immediately, and that will invalidate all previous tokens,
+
+## Changelog:
+## 06/08/2024
+**ADDED**
+> The Commands folder
+> Command deployment
+> Command registration
+> The `/ping` command.
+**UPDATED**
+> The license
+
+### 06/07/2024:
+**ADDED**:
+> Created the repository
