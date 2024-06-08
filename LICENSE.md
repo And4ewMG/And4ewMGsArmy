@@ -2,10 +2,12 @@
 License
 
 Permission is hereby granted to use the code for any purpose, including personal and commercial applications, with the following restrictions:
-> No credit or attribution is required to be given to the original author.
+> No credit or attribution is required if the code is used in closed-source projects.
 >
-> If asked, users must state that the code is not originally theirs.
+> If the code is used in open-source projects, proper credit must be given to the original author, preferably in the README file.
 >
-> The code, or any derivative works, may not be sold.
+> Upon inquiry, users must acknowledge that the code is not their original creation.
+>
+> The code, including any derivative works, may not be sold.
 
 *(thanks ChatGPT for generating that for me)*
