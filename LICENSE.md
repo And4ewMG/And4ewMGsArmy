@@ -1,5 +1,5 @@
 # And4ewMGsArmy
-License
+## License
 
 Permission is hereby granted to use the code for any purpose, including personal and commercial applications, with the following restrictions:
 > No credit or attribution is required if the code is used in closed-source projects.
