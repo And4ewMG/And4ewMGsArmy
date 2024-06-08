@@ -77,9 +77,13 @@ To find your token:
 ## 06/08/2024
 **ADDED**
 > The Commands folder
+> 
 > Command deployment
+> 
 > Command registration
+> 
 > The `/ping` command.
+
 **UPDATED**
 > The license
 
