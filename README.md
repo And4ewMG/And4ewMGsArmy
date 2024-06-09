@@ -74,7 +74,15 @@ To find your token:
 > If you think your token has been leaked, go back to 'https://discord.com/developers/applications/*YOUR_CLIENT_ID*/bot' and click 'Reset Token' immediately, and that will invalidate all previous tokens,
 
 ## Changelog:
-## 06/08/2024
+
+## 06/09/2024
+**ADDED**
+> The ban command, which contains a confirmation menu, 6 fail embeds being: User lacks perms, Bot lacks perms, Banning the bot, Self-banning, Banning the owner, Lower or equal role. It also DMs the user who has been banned.
+
+**UPDATED**
+> Command deployment
+
+### 06/08/2024
 **ADDED**
 > The Commands folder
 > 
@@ -95,4 +103,4 @@ To find your token:
 
 ### 06/07/2024:
 **ADDED**:
-> Created the repository
+> The repository itself
