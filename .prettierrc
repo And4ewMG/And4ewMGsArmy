@@ -1,0 +1,15 @@
+// The code in here is not required for the bot to run, but it's what is used to control how the code is formatted.
+
+{
+  "singleQuote": true,
+  "printWidth": 128,
+  "editor.formatOnSave": true,
+  "proseWrap": "always",
+  "tabWidth": 4,
+  "requireConfig": false,
+  "useTabs": false,
+  "trailingComma": "all",
+  "bracketSpacing": true,
+  "jsxBracketSameLine": false,
+  "semi": true
+}
