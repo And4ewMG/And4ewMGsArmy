@@ -42,6 +42,8 @@ Ensure that you have Node.js installed.
 
 In the terminal, run the following commands:
 > `npm i discord.js`
+>
+> `npm i mathjs`
 
 ### How to Use:
 Find the file called `config.json` and change the following:
@@ -75,6 +77,12 @@ To find your token:
 
 ## Changelog:
 
+## 06/10/2024
+**ADDED**
+> 3 commands, being calculator, diceroll, and truth.
+>
+> A subdirectory in the utils folder for the backend truth system.
+
 ## 06/09/2024
 **ADDED**
 > The ban command, which contains a confirmation menu, 6 fail embeds being: User lacks perms, Bot lacks perms, Banning the bot, Self-banning, Banning the owner, Lower or equal role. It also DMs the user who has been banned.
@@ -90,7 +98,7 @@ To find your token:
 > 
 > Command registration
 > 
-> The `/ping` command.
+> The ping command.
 >
 > Added event handling
 >
